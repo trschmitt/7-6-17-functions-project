@@ -60,27 +60,50 @@ console.log(isVowel("Z"));
 // 4.
 // Write a function called `sum` that takes two parameters and returns the sum of those 2 numbers.
 // Then, write and example of using the function.
-
-
+function sum(x, z) {
+  console.log(x + " * " + z);
+  return x + z;
+}
+console.log(sum(50, 60));
 
 // 5.
 // Write a function named `avg` that takes 3 parameters and returns the average of those 3 numbers.
 // Then, write and example of using the function.
+function avg(x, y, z) {
+  console.log(x, y, z);
+  return ((x + y + z) / 3);
+}
 
+console.log(avg(4, 5, 20));
 
 
 // 6.
 // Write a function called `getLength` that takes one parameter (a string) and returns the length
 // Then, write and example of using the function.
 
-
+function getLength(iAmString) {
+  console.log(iAmString);
+  return iAmString.length;
+}
+console.log(getLength("This is a test string to see how long it is. kind of like snake"));
 
 // 7.
 // Write a function called `greaterThan` that takes two parameters
 // and returns `true` if the second parameter is greater than the first.
 // Otherwise the function should return `false`.
 // Then, write and example of using the function.
+function greaterThan(para1, para2) {
+  let parasRFun;
+  if (para1 < para2) {
+    parasRFun = true;
+  }else {
+    parasRFun = false;
+  }
+  console.log(para1, para2);
+  return parasRFun;
+}
 
+console.log(greaterThan(40, 50));
 
 
 // 8.
@@ -89,8 +112,10 @@ console.log(isVowel("Z"));
 // is formated like "Hello, Name!" where *Name*
 // is the parameter that was passed in.
 // Then, write and example of using the function.
-
-
+function greet(singleP) {
+  return "The " + singleP + " are the best team in the NHL!";
+}
+console.log(greet("Wild"));
 
 // 9.
 // Write a function called `madlib` that takes 4 or more parameters (words).
@@ -100,3 +125,10 @@ console.log(isVowel("Z"));
 // words: "quick", "fox", "fence"
 // sentence: "quick brown fox jumps over the fence"
 // Then, write and example of using the function.
+
+function madlib(lib1, lib2, lib3, lib4) {
+  let sentence = lib1 + " and " + lib2 + " are the " + lib3 + " basketball players in the " + lib4 + ".";
+  return sentence;
+}
+
+console.log(madlib("Max", "Lucy", "most fantastic", "World"));
