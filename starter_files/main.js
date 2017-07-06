@@ -45,9 +45,17 @@ console.log("Largest number is " + maxOfThree(0, 15, 30));
 // Then, write and example of using the function.
 
 function isVowel(char){
-  let 
+  let vowelOrNah;
+  if (char == "A" || char == "E" || char == "I" || char == "O" || char == "U" || char == "Y") {
+    vowelOrNah = true + char + " is a vowel";
+  }else {
+    vowelOrNah = false + ' ' + char + " is not a vowel";
+  }
+  console.log(char);
+  return vowelOrNah;
 }
 
+console.log(isVowel("Z"));
 
 // 4.
 // Write a function called `sum` that takes two parameters and returns the sum of those 2 numbers.
