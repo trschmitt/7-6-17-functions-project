@@ -2,17 +2,28 @@
 // Define a function max() that takes two numbers as arguments and returns the largest of them. Use the if-then-else construct available in JavaScript.
 // Then, write an example of using the function.
 
-function max(num1, num2){
-  if (num1)
+function max(num1, num2) {
+  let result;
+  if ( num1 > num2 ) {
+    result = num1;
+  } else if ( num1 < num2 ) {
+    result = num2;
+  } else {
+    result = "Tie";
+  }
+  return result;
 }
+
+alert (max(10, 12));
 
 
 // 2.
 // Define a function maxOfThree() that takes three numbers as arguments and returns the largest of them.
 // Then, write and example of using the function.
 
-function maxOfThree(){
-    // Your answer here
+function maxOfThree(number1, number2, number3){
+  let largest;
+  
 }
 
 
