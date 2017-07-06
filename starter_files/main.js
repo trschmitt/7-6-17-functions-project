@@ -9,30 +9,43 @@ function max(num1, num2) {
   } else if ( num1 < num2 ) {
     result = num2;
   } else {
-    result = "Tie";
+    result = "neither, they are the same.";
   }
+  console.log(num1, num2);
   return result;
 }
 
-alert (max(10, 12));
+console.log("Largest number is " + max(10000, 10001));
 
 
 // 2.
 // Define a function maxOfThree() that takes three numbers as arguments and returns the largest of them.
-// Then, write and example of using the function.
+// Then, write an example of using the function.
 
 function maxOfThree(number1, number2, number3){
   let largest;
-  
+  if ((number1 > number2) && (number1 > number3)) {
+    largest = number1;
+  } else if ((number2 > number1) && (number2 > number3)) {
+    largest = number2;
+  } else if ((number3 > number1) && (number3 > number2)) {
+    largest = number3;
+  } else {
+    largest = "neither, they are the same.";
+  }
+  console.log(number1, number2, number3);
+  return largest;
+
 }
 
+console.log("Largest number is " + maxOfThree(0, 15, 30));
 
 // 3.
 // Write a function that takes a character (i.e. a string of length 1) and returns true if it is a vowel, false otherwise.
 // Then, write and example of using the function.
 
 function isVowel(char){
-    // Your answer here
+  let 
 }
 
 
